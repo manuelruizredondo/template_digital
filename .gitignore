@@ -2,3 +2,5 @@ node_modules
 build/
 dist/
 .parcel-cache/
+.parcel-cache
+dist
