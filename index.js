@@ -2,9 +2,24 @@ import LocomotiveScroll from "locomotive-scroll";
 import barba from '@barba/core';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import Swiper from 'swiper';
 
+
+
+//helpers
+function delay(n) {
+	n = n || 2000;
+	return new Promise((done) => {
+		setTimeout(() => {
+			done();
+		}, n);
+	});
+}
+
+
+
+
+//init zone
 gsap.registerPlugin(ScrollTrigger);
 
 let scroll;
@@ -15,15 +30,7 @@ function initPage(){
 	contentAnimation();
 }
 
-function delay(n) {
-	n = n || 2000;
-	return new Promise((done) => {
-		setTimeout(() => {
-			done();
-		}, n);
-	});
-}
-
+// This code creates a ScrollTrigger scrollerProxy that can be used to manipulate the scroll position of the element with the data-scroll-container attribute. It provides two functions, scrollTop() and getBoundingClientRect(). The scrollTop() function allows you to set or get the scroll position of the element. The getBoundingClientRect() function returns the size and position of the element. Finally, the pinType property is set to either "transform" or "fixed" depending on if the element has a transform style attribute.
 
 ScrollTrigger.scrollerProxy("[data-scroll-container]", {
 	scrollTop(value) {
@@ -69,14 +76,19 @@ function locoSlider() {
 		document.documentElement.setAttribute("data-direction", t.direction);
 	});
 
-	setTimeout(() => {
-	
+	changeBackgroundColorOnScrollEnter();
+
+	scroll.on("scroll", ScrollTrigger.update);
+
+	ScrollTrigger.addEventListener("refresh", () => scroll.update());
+	ScrollTrigger.refresh();
+}
+
+
+//The function uses the GSAP library to change the background color of an element with the class container-color to a color specified by the obj.id property.
+function changeBackgroundColorOnScrollEnter() {
+	setTimeout(function() {
 		scroll.on("call", (value, way, obj) => {
-
-			console.log("valor"+value);
-			console.log("way"+way);
-			console.log("obj"+obj);
-
 			if (way === "enter") {
 			
 				switch (value) {
@@ -87,13 +99,9 @@ function locoSlider() {
 				}
 			}
 		});
-	}, 100);
 
-	scroll.on("scroll", ScrollTrigger.update);
-
-	ScrollTrigger.addEventListener("refresh", () => scroll.update());
-	ScrollTrigger.refresh();
-}
+	}, 100); // delay in milliseconds (100 = 0,1 seconds)
+  }
 
 
 function initSwiper() {
@@ -110,6 +118,10 @@ function initSwiper() {
 		},
 	});
 }
+
+//This function can be used to create a loading screen effect, where the loading screen element slides in from the left, stays visible for a moment, and then slides out to the right. The use of the Expo.easeInOut easing function and the delays between the animations help to create a smooth and natural-looking transition.
+
+
 function pageTransition() {
 	var tl = gsap.timeline();
 	tl.to(".loading-screen", {
