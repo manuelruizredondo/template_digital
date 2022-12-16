@@ -89,8 +89,29 @@
     </section>
     <div data-scroll-section  data-scroll  data-scroll-offset="50%,50%"  data-scroll-call="pageColor" data-scroll-id="yellow">
 
-
+      <div id="videoContainer" class="video-container">
+        <video data-src="iphone6.min.mp4"></video>
+      </div>
+      <!-- dont works route -->
+      <div id="videoContainer2" class="video-container">
+        <video data-src="assets/video/iphone6.min.mp4"></video>
+      </div>
       
+      <script src="https://rawgit.com/finnursig/videoscroller/master/dist/video-scroller.min.js"></script>
+      <script>
+        new VideoScroller({
+          el: document.querySelector('#videoContainer video'),
+          debug: true,
+        });
+      
+        new VideoScroller({
+          el: document.querySelector('#videoContainer2 video'),
+          invert: true,
+          debug: false,
+        });
+      </script>
+
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">Slide 1</div>
