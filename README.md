@@ -1,5 +1,4 @@
-# Parcel HTML, CSS, and JavaScript Starter Template
-
+# Parcel HTML, Scss, locomotive scroll, barbajs, color changer Experiment
 A blazing fast frontend development starter template, bundled using [Parcel](https://parceljs.org).
 
 ## Quick Start
