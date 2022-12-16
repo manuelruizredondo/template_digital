@@ -5768,6 +5768,10 @@ strong {
   max-width: 798px;
 }
 
+.w-max {
+  width: max-content;
+}
+
 .arrow-cover {
   height: auto;
   color: #292929;
@@ -8429,8 +8433,6 @@ button.link-line {
 }
 
 .link-line {
-  font-family: DuttiW-Medium, Helvetica, Arial, Lucida Grande, sans-serif;
-  font-weight: inherit;
   display: initial;
   cursor: pointer;
   background-color: #0000;
