@@ -1,0 +1,116 @@
+$container-5: 395px;
+
+$headers:/* name:mobile,768,992,1280,line-height,font */ (
+
+
+    tit-l: (24px, 24px, 42px, 42px, 1.4, "bold2"),
+    tit-m: (20px, 20px, 32px, 32px, 1.4, "bold2"),
+    tit-s: (16px, 16px, 20px,20px, 1.4, "bold"),
+    tit-xs:(14px, 14px, 14px,14px, 1.4, "bold"),
+
+
+
+    head-l:(56px, 56px, 96px, 96px, 1.4, "bold2"),
+    head-m:(42px, 42px, 64px, 64px, 1.4, "bold2"),
+    head-s:(32px, 32px, 56px ,56px, 1.4, "bold2"),
+
+    p-l: (18px, 18px, 20px ,20px, 1.4, "regular"),     
+    p-m: (14px, 14px, 16px ,16px, 1.4, "regular"),     
+    p-m-b: (14px, 14px, 16px ,16px, 1.4, "bold"), 
+    p-s: (12px, 12px, 14px ,14px, 1.4, "regular"),   
+    p-s-b: (12px, 12px, 14px ,14px, 1.4, "bold"),     
+    p-xs:(10px, 10px, 12px ,12px, 1.4, "regular"),     
+    p-xs-b:(10px, 10px, 12px ,12px, 1.4, "bold"),
+
+    //TODO: Limited
+    h10: ( 16px, 16px, 24px, 24px, 1.4, 'bold' ),   
+    h11: (16px, 16px, 24px, 24px, 1.4, "bold2")
+);
+
+/* TYPES FIJOS */
+
+$headersFixers: (
+    /*name :  fontsize, lineheight */ 12: (12px, 1.5),
+    14: (14px, 1.5),
+    16: (16px, 1.5),
+    18: (18px, 1.5),
+    20: (20px, 1.2),
+    24: (24px, 1.2),
+    32: (32px, 1.2),
+    40: (40px, 1.2)
+);
+
+$headersFluids: (/*name :  fontsize, lineheight */
+   12 : (12px, 14px, .3),
+   24 : (14px, 24px,1.2),
+   32 : (16px, 32px,1.2),
+   18 : (18px, 24px,1),
+   48: (20px, 48px,.9),
+   64 : (30px, 64px,.9),
+   72 : (40px, 72px,.9),
+
+   80 : (40px, 80px,.9),
+
+   100 : (40px, 100px,.9),
+
+   160 : (60px, 160px,.8),
+
+   ) !default;
+
+
+//2-regular    2-medium     2-bold
+
+$font-family-primary: 'DuttiW-Regular' , Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+
+$font-family-light:   'DuttiW-Light' , Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+$font-family-regular: 'DuttiW-Regular' , Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+$font-family-medium:   'DuttiW-Medium' , Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+$font-family-bold:     'DuttiW-Bold' , Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+$font-family-black:    'DuttiW-Bold', Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+
+$font-family-italic:  'DuttiW-Regular' , Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+
+$font-family-regularcn:   Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+$font-family-mediumcn:  Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+$font-family-boldcn:  Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+
+$font-family-2-regular: 'DuttiWExtended-Regular' , Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+$font-family-2-medium:   Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+$font-family-2-bold: 'DuttiWExtended-Bold' , Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+
+$font-family-3-bold: 'DuttiWExtended-ExtraBold' , Helvetica, 'Arial', 'Lucida Grande', sans-serif;
+
+$font-weight-light: inherit;
+$font-weight-regular: inherit;
+$font-weight-medium: inherit;
+$font-weight-bold: inherit;
+
+$font-family-form-placeholder: 'DuttiW-Regular';
+$font-family-form: 'DuttiW-Regular';
+
+
+$btn-radius: 8px;
+
+
+
+$bg-light:#F4F3F0;
+$bg-dark:#323333;
+
+
+$c-white: #FFFFFF;
+$c-black: #000000;
+
+$c-dark-grey: #8E8E8E;
+$c-middle-grey: #E3E3E3;
+$c-light-grey: #F0F0F0;
+
+$c-primary: #292929;
+$c-error: #B40016;
+$c-info: #1A32A4;
+
+$c-success: #76AE4A;
+$c-warning: #ffc700;
+$c-feel: #fb9962;
+$c-feel-dark: #C94C07;
+$c-special:#b99d6b; //gold
+// fin massimodutti color MD 2022

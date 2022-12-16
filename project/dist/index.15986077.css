@@ -1,0 +1,157 @@
+.home-once {
+  opacity: 0;
+}
+
+.home-once-active {
+  transition: opacity 3s linear;
+}
+
+.home-once-to {
+  opacity: 1;
+}
+
+.home-leave {
+  transform: translateX(0%);
+}
+
+.home-leave-active {
+  transition: all .7s var(--easing);
+}
+
+.home-leave-to {
+  transform: translateX(100%);
+}
+
+.home-enter {
+  transform: translateX(-100%);
+}
+
+.home-enter-active {
+  transition: all .7s var(--easing);
+}
+
+.home-enter-to {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(0%);
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: opacity .5s linear;
+}
+
+.fade-leave-to, .fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s linear;
+}
+
+.fade-enter-to, .interior-leave {
+  opacity: 1;
+}
+
+.interior-leave-active {
+  transition: opacity .1s linear;
+}
+
+.interior-leave-to {
+  opacity: 0;
+}
+
+.interior-enter {
+  clip-path: circle(0%);
+}
+
+.interior-enter-active {
+  z-index: 2;
+  transition: all .5s linear;
+  position: absolute;
+  top: 0;
+}
+
+.interior-enter-to {
+  interior-path: circle(75%);
+}
+
+.with-cover-leave-active, .with-cover-enter-active, .with-cover-leave-active .transition2, .with-cover-enter-active .transition2 {
+  transition: transform 1s var(--easing);
+}
+
+.with-cover-leave .transition2 {
+  transform: translateX(-100%);
+}
+
+.with-cover-leave-to .transition, .with-cover-enter .transition2 {
+  transform: translate(0%);
+}
+
+.with-cover-enter-to .transition2 {
+  transform: translateX(100%);
+}
+
+:root {
+  --easing: cubic-bezier(.5, .7, .4, 1);
+}
+
+body {
+  margin: 0%;
+  font-weight: 300;
+}
+
+header a {
+  text-align: center;
+  color: var(--base-color);
+  border: 3px solid var(--base-color);
+  border-radius: 10px;
+  padding: 24px 2vw;
+  font-size: 2.22vw;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header.is-home {
+  background-color: #5c85ee;
+}
+
+header.is-interior {
+  background-color: #161636;
+}
+
+header.is-cover {
+  background-color: #e66f7f;
+}
+
+.content {
+  opacity: 1;
+  height: 100vh;
+  transition: all .3s ease-out;
+  transform: translateY(0);
+}
+
+.transition {
+  z-index: 99;
+  width: 50%;
+  height: 50vh;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.transition li {
+  width: 20%;
+  background: #fffffe;
+  transform: scaleY(.5);
+}
+
+/*# sourceMappingURL=index.15986077.css.map */

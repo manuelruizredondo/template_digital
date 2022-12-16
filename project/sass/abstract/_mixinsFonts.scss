@@ -1,0 +1,21 @@
+
+// Monospace//
+@mixin text-monospace {
+    font-family: $font-family-regular;
+}
+@mixin text-monospace-bold {
+    font-family: $font-family-bold;
+}
+@mixin font-i {
+    font-family: $font-family-italic;
+}
+
+@mixin font-medium-i {
+     font-family:$font-family-bold ;
+     font-style: italic;
+}
+
+@mixin font-2-bold-i {
+      font-family: $font-family-bold,;
+      font-style: italic;
+}
