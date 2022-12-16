@@ -1,4 +1,11 @@
 import LocomotiveScroll from "locomotive-scroll";
+import barba from '@barba/core';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import Swiper from 'swiper';
+
+gsap.registerPlugin(ScrollTrigger);
 
 let scroll;
 
@@ -40,7 +47,6 @@ ScrollTrigger.scrollerProxy("[data-scroll-container]", {
 
 function locoSlider() {
 
-	gsap.registerPlugin(ScrollTrigger);
 
 	scroll = new LocomotiveScroll({
 		el: document.querySelector("[data-scroll-container]"),
