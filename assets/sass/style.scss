@@ -1,0 +1,164 @@
+/*+------------------------------------------------------------+
+ |       - FASE0: RESET
+ +------------------------------------------------------------+*/
+html,
+body,
+div,
+span,
+select,
+object {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*+------------------------------------------------------------+
+|       -FASE 2 : IMPORTA TU HOLYGRAIL
++------------------------------------------------------------+*/
+@import './abstract/_all.scss';
+@import "~holygrailcss/scss/style.scss";
+
+@import "./_swiper.scss";
+
+
+
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: orangered;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+.is-home {
+
+}
+
+
+
+.is-interior {
+  background-color: #cccccc;
+}
+
+
+.swiper {
+  height: 400px;
+}
+
+
+.has-scroll-smooth body, html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+a.link1 {
+  cursor: pointer;
+  svg {
+    position: absolute;
+    top: 3px;
+    right: -30px;
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+    width: 26px;
+  }
+}
+
+.cursor {
+  position: fixed;
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1);
+}
+.cursor-follow {
+  position: fixed;
+  background-color: $primary;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  user-select: none;
+  pointer-events: none;
+  &:after{
+    content: ">";
+    font-size: 36px;
+    top: 8px;
+    position: absolute;
+    line-height: 0;
+    right: 0;
+    @include font-light;
+    color: $primary;
+    transition: .2s ease all;
+    opacity: 0;
+  }
+  &:before{
+    content: "<";
+    font-size: 36px;
+    top: 8px;
+    position: absolute;
+    line-height: 0;
+    left: 0;
+    @include font-light;
+    color: $primary;
+    transition: .2s ease all;
+    opacity: 0;
+  }
+}
+.drag{
+  .cursor-follow {
+    &:after{
+      opacity: 1;
+      right: -16px;
+    }
+    &:before{
+      opacity: 1;
+      left: -16px;
+    }
+  }
+}
+.mix-blend{
+  mix-blend-mode: difference;
+}
+
+body {
+	margin: 0px;
+}
+canvas {
+	display: block;
+}
+canvas {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top :0;
+  z-index: 20000;
+  background: red;
+}

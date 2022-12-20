@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home page</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="sass/style.scss" />
+  <link rel="stylesheet" href="./assets/sass/style.scss" />
   <style>
   </style>
 </head>
 
 <body class="contain" data-barba="wrapper">
+
+
+
   <div class="load-container">
     <div class="loading-screen"></div>
   </div>
   <header data-barba="container"  data-barba-namespace="home" class="is-home"  >
-
+    <div class="cursor"></div>
+    <div class="cursor-follow"></div>
 <div class="container-color" data-scroll-container  > 
 
     <section data-scroll-section data-scroll  data-scroll-offset="50%,50%" data-scroll-call="pageColor" data-scroll-id="black"  >
@@ -24,6 +28,9 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="  height-full is-flex  flex-column content-center">
+
+
+
               <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.03 223.5">
                 <title>digitalstrategy</title>
                 <path
@@ -88,30 +95,9 @@
       </div>
     </section>
     <div data-scroll-section  data-scroll  data-scroll-offset="50%,50%"  data-scroll-call="pageColor" data-scroll-id="yellow">
-      <!-- FIVERR  -->
-      <div id="videoContainer" class="video-container">
-        <video src="./assets/video/iphone6.mp4" data-src="./assets/video/iphone6.mp4" ></video>
-      </div>
 
-      <div id="videoContainer2" class="video-container">
-        <video src="./assets/video/iphone6.mp4" data-src="./assets/video/iphone6.mp4"  ></video>
-      </div>
-      
-      <script src="https://rawgit.com/finnursig/videoscroller/master/dist/video-scroller.min.js"></script>
-      <script>
-        new VideoScroller({
-          el: document.querySelector('#videoContainer video'),
-          debug: true,
-        });
-      
-        new VideoScroller({
-          el: document.querySelector('#videoContainer2 video'),
-          invert: true,
-          debug: false,
-        });
-      </script>
 
-      <!-- FIVERR  -->
+      <strong></strong>
 
 
       <div class="swiper mySwiper">
@@ -147,12 +133,9 @@
   </header>
   <script src="https://rawgit.com/finnursig/videoscroller/master/dist/video-scroller.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="module" src="/index.js"></script>
 
-
-
-
-  <script type="module" src="/index.js"></script>
+  <script type="module" src="./assets/js/cursor.js"></script>
+  <script type="module" src="./assets/js/index.js"></script>
 
 
 </body>

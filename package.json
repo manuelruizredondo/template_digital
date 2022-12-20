@@ -16,6 +16,7 @@
     "mathsass": "0.11.0",
     "photoswipe": "^5.3.4",
     "swiper": "^8.4.5",
+    "three": "^0.147.0",
     "video-scroller": "^1.1.1"
   },
   "devDependencies": {
