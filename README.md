@@ -5,6 +5,8 @@ A blazing fast frontend development starter template, bundled using [Parcel](htt
 
 To get started instantly, you can one-click deploy to Netlify below (this also creates a copy of the repository in your own GitHub account), or you can click the "Use this Template" above.
 
+
+
 [![Deploy to Netlify](./src/assets/deploy-to-netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/manuelruizredondo/template_digital.git)
 
 ## Features
